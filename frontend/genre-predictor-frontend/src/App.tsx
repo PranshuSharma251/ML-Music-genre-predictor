@@ -39,7 +39,7 @@ const App: React.FC = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:8000/predict", formData);
+      const res = await axios.post("https://ml-genre-predictor-backend.onrender.com/predict", formData);
       console.log("API response:", res.data);
       setPredictions(res.data.predictions); // assuming backend sends `top_predictions: [{ genre, probability }]`
     } catch (error) {
