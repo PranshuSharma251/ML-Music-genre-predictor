@@ -89,7 +89,7 @@ const App: React.FC = () => {
             </Typography>
 
             <Typography variant="subtitle1" color="gray" sx={{ mb: 3 }}>
-              Upload an audio files (.wav) and discover the genre
+              Upload an audio file (.wav) and discover the genre
             </Typography>
 
             <input
